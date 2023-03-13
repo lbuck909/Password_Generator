@@ -1,3 +1,4 @@
+//define the characters here//
 function getPassword() {
   const chars =
     "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+?><:{}[]";
