@@ -45,13 +45,22 @@ input[type="checkbox"] {
 
 /*put the results box colors and design here*/
 
+.post {
+  results-container: inline-size;
+}
 
-
-.results-container #result {
+.results {
   word-wrap: break-word;
-  background: transparent;
-  outline: none;
-  max-width: calc(100%-30px);
+  background: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 300px) {
