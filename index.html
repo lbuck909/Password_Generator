@@ -4,52 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" /><!--this links css styling to the html-->
     <title>Password Generator</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Secure Password Generator</h2>
+    <div class="container"> <!-- this section creates the password generator box basics-->
+      <h2 class="title"> Secure Password Generator</h2>
       <div class="results-container">
-        <span id="results"></span>
-        <button class="button" id="btn">
-          <input
-            type="text"
-            placeholder="New Password"
-            id="password"
-            readonly
+          <span id="results"></span>
+       <input type="text"placeholder="New Password"id="password"readonly*
           />
         </button>
       </div>
       <div class="settings">
         <div class="setting">
-          <label for="Length">Password Length"</label>
-          <input type="number" id="Length" min="6" max="20" value="20" />
+          <label for="Length">Password Length</label>
+          <input type="number" id="passwordLength" min="6" max="20" value="20" /> <!-- this area creates the boundary of the passowrd lenth. A minimum of 6 characters and max of 20-->
         </div>
         <div class="setting">
           <label for="uppercase"> Include all uppercase letters</label>
           <input type="checkbox" id="uppercase" checked />
-        </div>
+        </div> <!-- All uppercase letters will be included for the randomized password-->
 
         <div class="setting">
           <label for="lowercase"> Include all lowercase letters</label>
           <input type="checkbox" id="lowercase" checked />
-        </div>
+        </div><!-- All lowercase letters will be included for the randomized password-->
 
         <div class="setting">
           <label for="numbers"> Include all numbers</label>
           <input type="checkbox" id="numbers" checked />
-        </div>
+        </div><!-- All numbers 1-9 will be included for the randomized password-->
 
         <div class="setting">
           <label for="symbols"> Include symbols</label>
           <input type="checkbox" id="symbols" checked />
+        </div><!-- The symbols included for the randomized password are ~!@#$%^&*()_+?><:{}[]-->
+        <div>
+        
+          <button type="submit" oneclick="getPassword()">Create Password</button>
+          
+        
+        <!--this button will be located at the bottom of the box. Used to create the randomized password--!>
+        
         </div>
-        <div></div>
       </div>
 
-      <button class="buttonLarge" id="generate">Create Password</button>
-    </div>
-    <script src="main.js"></script>
+      
+    </div> 
+
+    <script src="./css/main.js"></script>
   </body>
 </html>
